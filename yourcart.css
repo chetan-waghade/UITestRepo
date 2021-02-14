@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* GLOBALS */
+
+html{
+    font-family: 'quicksand';
+}
+
+body{
+    height: 95vh;
+    /* settings fixed width */
+    display: grid;
+    grid-template-rows: 89.25% 10%;
+    overflow: hidden;
+}
+
+.container{
+    height: auto;
+    margin: 0.2rem 0;
+    padding: 0 1rem;
+    overflow: scroll;
+    /* using flex to arrange children in row */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* UTILITIES */
+
+
+
+/* LAYOUT & COMPONENTS */
+
+/* IF ORDER EXIST SHOW */
+/* HEADER */
+
+header{
+    flex: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+
+header > div{
+    margin-right: 1rem;
+}
+
+/* MAIN CONTENT */
+
+section{
+    flex:95%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section .customer-details{
+    margin-bottom: 0.5rem;
+}
+
+/* distribute the layout hieght */
+section .customer-details {flex:10%; }
+section .order-details {flex:60%; }
+section .order-cost {flex:10%; }
+section .order-additional-instructions {flex:20%; }
+/* Order Details */
+
+section .order-details{
+    display: flex;
+    flex-direction: column;
+}
+
+/* order item */
+
+section .order-details .order-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+section .order-details .order-item .order-item-img{
+    flex:30%;
+    height: 12vh;
+    width: 8vw;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+/* order item details */
+/* stack the details */
+section .order-details .order-item .order-item-detail{
+    flex:70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* align name & close icon horizontally */
+section .order-details .order-item .order-item-detail .name-close{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+section .order-details .order-item .order-item-detail .name-close .close-icon{
+    color: rgb(155, 84, 88); 
+    font-weight:700;
+}
+
+
+/* align quantity & price icon horizontally */
+section .order-details .order-item .order-item-detail .quantity-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+section .order-details .order-item .order-item-detail .quantity-price span.btn{
+    display: inline-block;
+    width: 1.7rem;
+    background-color:#EFEFEF;
+    text-align: center;
+    border-radius: 0.3rem;
+    margin-right: 0.2rem;
+}
+
+section .order-details .order-item .order-item-detail .quantity-price span{
+    margin-right: 0.2rem;
+    padding: 0.2rem 0;
+}
+
+section .order-details .order-item .order-item-detail .quantity-price span.quantity-counter{
+    display: inline-block;
+    text-align: center;
+    width: 1.2rem;
+}
+
+/* ORDER COST */
+section .order-cost{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+section .order-cost div > p{
+    letter-spacing: 0.1rem;
+}
+
+section .order-cost .item-charges,.taxes-charges,.grand-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+
+/* ORDER ADDITIONAL INSTRUCTIONS */
+section .order-additional-instructions{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+section .order-additional-instructions .title{
+    margin: 0.5rem 0;
+}
+
+/* IF ORDER EMPTY */
+.container-empty{
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-empty section{
+    display: grid;
+    grid-template-rows: 20% 20%;
+    grid-gap: 1rem;
+    text-align: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.container-empty section  > div {
+    margin:1rem 0;
+}
+
+.container-empty section  > div p{
+    margin:1rem 0;
+    font-size: 1.2rem;
+}
+
+.container-empty section .empty-cart button{
+    background-color: #1E5537;
+    color:#FFFFFF;
+    border:none;
+    font-weight: 500;
+    outline:none;
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    letter-spacing: 0.09rem;
+}
+
+.container-empty section .already-ordered a{
+    text-decoration: none;
+    color:#1E5537;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+/* PLACE ORDER BUTTON */
+.place-order{
+    height: 7vh;
+}
+
+.place-order button{
+    height: 100%;
+    width: 100%;
+    background-color: #1E5537;
+    color:#FFFFFF;
+    border:none;
+    font-weight: 500;
+    outline:none;
+    transition: all 0.2s ease-in-out;
+}
+
+.place-order button:active{
+   background-color: #18422b;
+}
+
+
+.place-order-button-disabled{
+    background-color: #CCCCCC !important;
+}

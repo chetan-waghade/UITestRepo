@@ -1,0 +1,209 @@
+<!-- WORK LEFT -->
+<!-- DYNAMIC CONTENT, INCREASE PRICE, ORDER STATUS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="yourcart.css">
+
+    <!-- remove -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+
+<body>    
+    <!-- Main Wrapper -->
+    <div class="container">
+        <!-- Back Option, Title -->
+        <header>
+            <div class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="title">
+                <h4>Your Cart</h4>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <section>
+            <!-- About Customer -->
+            <div class="customer-details">
+                <h5>Order for, Chetan, 7559279778</h5>
+            </div>
+            <!-- Customers Order -->
+            <div class="order-details">
+
+                <!-- single item -->
+                <!-- Dynamic Content -->
+                <div class="order-item">
+
+                    <!-- Item Image -->
+                    <div class="order-item-img" style="background: url('https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg') center center/cover no-repeat;">
+                        
+                    </div>
+                    <!-- Item Details -->
+                    <div class="order-item-detail">
+                        <!-- Name & Close -->
+                        <div class="name-close">
+                            <h5>Pizza Extravaganza</h5>
+                            <span class="close-icon">X</span>
+                        </div>
+
+                        <!-- Quantity & Price -->
+                        <div class="quantity-price">
+                            <!-- Increase Count Decrease -->
+                            <div class="quantity">
+                                <span class="btn increase-quantity">+</span>
+                                <span class="quantity-counter">1</span>
+                                <span class="btn decrease-quantity">-</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="price">
+                                <p>Rs. 280</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+
+                    <!-- Item Image -->
+                    <div class="order-item-img" style="background: url('https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg') center center/cover no-repeat;">
+                       
+                    </div>
+                    <!-- Item Details -->
+                    <div class="order-item-detail">
+                        <!-- Name & Close -->
+                        <div class="name-close">
+                            <h5>Pizza Extravaganza</h5>
+                            <span class="close-icon">X</span>
+                        </div>
+
+                        <!-- Quantity & Price -->
+                        <div class="quantity-price">
+                            <!-- Increase Count Decrease -->
+                            <div class="quantity">
+                                <span class="btn increase-quantity">+</span>
+                                <span class="quantity-counter">1</span>
+                                <span class="btn decrease-quantity">-</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="price">
+                                <p>Rs. 280</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+
+                    <!-- Item Image -->
+                    <div class="order-item-img" style="background: url('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/eggs-breakfast-avocado-1296x728-header.jpg') center center/cover no-repeat;">
+                        
+                    </div>
+                    <!-- Item Details -->
+                    <div class="order-item-detail">
+                        <!-- Name & Close -->
+                        <div class="name-close">
+                            <h5>Pizza Extravaganza</h5>
+                            <span class="close-icon">X</span>
+                        </div>
+
+                        <!-- Quantity & Price -->
+                        <div class="quantity-price">
+                            <!-- Increase Count Decrease -->
+                            <div class="quantity">
+                                <span class="btn increase-quantity">+</span>
+                                <span class="quantity-counter">1</span>
+                                <span class="btn decrease-quantity">-</span>
+                            </div>
+                            <!-- Price -->
+                            <div class="price">
+                                <p>Rs. 280</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Customers Orders Cost -->
+            <div class="order-cost">
+                <div class="item-charges">
+                    <h5>Item Charges</h5>
+                    <p>Rs. 1140</p>
+                </div>
+                <div class="taxes-charges">
+                    <h5>Taxes & Charges</h5>
+                    <p>Rs. 1140</p>
+                </div>
+                <div class="grand-total">
+                    <h5>Grand Total</h5>
+                    <p>Rs. 1140</p>
+                </div>
+            </div>
+            <!-- Customers Additional Instructions -->
+            <div class="order-additional-instructions">
+                <div class="title">
+                    <h5>Additional Instructions</h5>
+                </div>
+                <div class="instructions">
+                    <p>Tej bnana bro</p>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- IF EMPTY -->
+    <!-- UNCOMMENT THIS -->
+    <!-- <div class="container-empty hide">
+        
+        <header>
+            <div class="back-button">
+                <i>&lt;--</i>
+            </div>
+            <div class="title">
+                <h4>Your Cart</h4>
+            </div>
+        </header>
+        <section>
+            
+            <div class="empty-cart">
+                <p>Cart is empty,why not order some delicious food</p>
+                
+                <a href="#"><button>Explore Menu</button></a>
+            </div>
+            
+            <div class="already-ordered">
+                <p>Oh, You've already ordered something</p>
+                <a href="#">Go to my orders</a>
+            </div>
+
+        </section>
+    </div> -->
+
+    <!-- Place Order Button -->
+
+    <!-- If Not Empty -->
+    <!-- UNCOMMENT THIS -->
+    <!-- <div class="place-order">
+        <button class="place-order-button-disabled">Place Order</button>
+    </div> -->
+
+
+    <!-- else  -->
+    <div class="place-order ">
+        <button class="place-order-button">Place Order</button>
+    </div>
+
+
+    <script src="yourcart.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/117146bfff.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
