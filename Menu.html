@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="sidebar-menu">
+        <div class="table-details-close-icon">
+            <div class="table-details">
+                <p>Table No. 21</p>
+            </div>
+            <div class="close-icon">
+                <button id="close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="user-details">
+            <p style="font-weight: 700; color:#1E5537;">Chetan,</p>
+            <p>8888988889</p>
+        </div>
+        <div class="links">
+            <a href="#"><span style="margin-right: 0.5rem;"><i class="fas fa-clipboard-list"></i></span> My Orders</a>
+        </div>
+    </div>
+
+    <!-- Helper Button to Jump to Top -->
+    <div class="goto">
+        <a href="#top" contextmenu="none" oncontextmenu="return false">Go to top <span id="fps"></span> </a>
+    </div>
+    <!-- remove container when using single css file for whole project -->
+    <div class="container" id="top">
+
+        <!-- Hamburger Menu, Searchbar, Cart -->
+        <header >
+            <div class="hamburger-menu">
+                <span class="menu-icon" style="background:url('/img/menu.svg') center;display:inline-block;height: 2rem; width: 2rem;"></span>
+            </div>
+
+            <div class="search">
+
+                <div class="search-box">
+                    <input type="text" name="search" id="search-input" placeholder="Search your favourite item">
+                    <span id="search-icon"><i class="fas fa-search"></i></span>
+                </div>
+
+            </div>
+
+            <div class="cart">
+                <span class="cart-icon" style="background:url('/img/cart.svg') center center/cover;display:inline-block;height: 2rem; width: 2rem;"></span>
+                <span class="cart-item-count" >3</span>
+            </div>
+
+        </header>
+
+        <div class="customer-name">
+            <h5>Hi, Chetan</h5>
+        </div>
+
+        <!-- list -->
+        <nav class="cuisine-category-list" >
+
+            <div class="cuisine-title-see-all">
+                <p>Cuisine</p>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="list">
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Pizza</p>
+                </div>
+
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Veg</p>
+                </div>
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Chicken</p>
+                </div>
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Nonveg</p>
+                </div>
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Veg</p>
+                </div>
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Paneer</p>
+                </div>
+
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Pizza</p>
+                </div>
+
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Pizza</p>
+                </div>
+                <div class="cuisine-category-item">
+                    <div class="cuisine-category-item-img">
+
+                    </div>
+                    <p>Pizza</p>
+                </div>
+
+
+            </div>
+        </nav>
+
+        <section class="cuisine-item-list">
+
+            <div class="cuisine-selected-category-name">
+                <p>Showing dishes in All</p>
+            </div>
+
+            <!-- Dynamic Content -->
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="cuisine-item">
+                <div class="cuisine-item-img">
+                    <button class="add-item-to-cart">ADD +</button>
+                </div>
+                <div class="cuisine-item-details">
+                    <div class="cuisine-item-name-price">
+                        <h3>Chicken Biryani</h3>
+                        <span><i class="far fa-clock"></i> 30-20 Min</span>
+                        <p>Rs. 250</p>
+                    </div>
+                    <div class="cuisine-item-tags-time">
+                        
+                        <div class="time">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/117146bfff.js" crossorigin="anonymous"></script>
+    <script src="Menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    font-family: 'quicksand';
+
+}
+
+.container {
+    width: 95vw;
+    margin: 0 auto;
+
+}
+
+/* || UTILITIES */
+.goto {
+    position: fixed;
+    left: 0.3rem;
+    bottom: 0.3rem;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 0.2rem solid #153b26;
+    z-index: 1;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.goto a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.1rem 0.2rem;
+    color: #153b26;
+
+}
+
+/* || LAYOUT & COMPONENTS */
+
+/* || SIDEBAR MENU */
+
+.sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -15rem;
+    width: 12rem;
+    z-index: 2;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menu .table-details-close-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.sidebar-menu .table-details-close-icon .close-icon button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #555;
+    outline: none;
+    user-select: none;
+}
+
+.sidebar-menu .user-details {
+    padding: 0 0.5rem;
+}
+
+.sidebar-menu .user-details>p {
+    margin-bottom: 0.5rem;
+}
+
+
+.sidebar-menu .links {
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.sidebar-menu .links a {
+    display: block;
+    padding: 1rem 0.5rem;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    
+}
+
+/* Sidebar Animation */
+@keyframes toRight {
+    from {
+        left: -15rem;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes toLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -15rem;
+    }
+}
+
+
+/* || header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+header .hamburger-menu {
+    color: #1E5537;
+    font-size: 1.5rem;
+}
+
+header .search {
+    width: fit-content;
+    height: fit-content;
+
+}
+
+header .search .search-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    background-color: #F2F2F2;
+    border-radius: 0.4rem;
+}
+
+header .search .search-box input {
+    width: 60vw;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+header .search .search-box input::placeholder {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+header .search .search-box #search-icon {
+    color: #D0D0D0;
+}
+
+header .cart {
+    color: #1E5537;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+header .cart .cart-item-count {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 0rem;
+    border-radius: 50%;
+    background-color: #1E5537;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+/* ||  Customer Name */
+
+.customer-name {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* ||  Cuisine Category List */
+.cuisine-category-list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cuisine-category-list .cuisine-title-see-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuisine-category-list .cuisine-title-see-all a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.cuisine-category-list .cuisine-title-see-all p {
+    font-size: 1.3rem;
+}
+
+
+
+.cuisine-category-list .list {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding:0.5rem 0;
+    overflow-x: scroll;
+
+}
+
+.cuisine-category-list .list .cuisine-category-item {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 0.5rem;
+}
+
+/* ||  on select highlight category */
+.cuisine-category-list .list .active {
+    background-color: #1E5537;
+    border-radius: 0.7rem;
+    color: white;
+    font-weight: 700;
+}
+
+.cuisine-category-list .list .cuisine-category-item .cuisine-category-item-img {
+    height: 10vh;
+    width: 18vw;
+    margin-bottom: 0.5rem;
+    background: url("https://www.gstatic.com/webp/gallery/5.webp") center center/cover no-repeat;
+    border-radius: 0.7rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ||  Cuisine Item List */
+
+.cuisine-item-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.cuisine-item-list .cuisine-selected-category-name {
+    margin-bottom: 0.5rem;
+}
+
+/* cuisine item */
+
+.cuisine-item-list .cuisine-item {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    margin:0.5rem 0.2rem;
+    background-color: #F8F8F8;
+    box-shadow: 0rem .1rem .2rem rgba(0, 0, 0, 0.25);
+}
+
+.cuisine-item-list .cuisine-item .cuisine-item-img {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background: url("https://www.gstatic.com/webp/gallery/5.webp") center/cover no-repeat;
+    border-radius: 0.5rem;
+}
+
+
+.cuisine-item-list .cuisine-item .cuisine-item-img button {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: 20vw;
+    font-size: .8rem;
+    font-weight: 700;
+    background-color: #1E5537;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    box-shadow: 0px 1px 2px 1px rgba(28, 28, 28, 0.4);
+    border-radius: 0.7rem;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    letter-spacing: 0.1rem;
+}
+
+.cuisine-item-list .cuisine-item .cuisine-item-img button:active {
+    background-color: #153b26;
+}
+
+.cuisine-item-list .cuisine-item .cuisine-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuisine-item-list .cuisine-item .cuisine-item-details .cuisine-item-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.cuisine-item-list .cuisine-item .cuisine-item-details .cuisine-item-name-price span {
+    font-size: 0.7rem;
+}
+
+.page-error{
+    visibility: hidden;
+}
+
